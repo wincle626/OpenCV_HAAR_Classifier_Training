@@ -1,3 +1,4 @@
 cd positive_images
-for f in *.txt ; do opencv_createsamples -info "$f" -w 200 -h 200 -vec "${f%.txt}.vec" ; done
+for f in *.txt ; do opencv_createsamples -info "$f" -w 20 -h 20 -vec "${f%.txt}.vec" ; done
 cd ..
+python2 ./tools/mergevec.py -v positive_images/ -o samples.vec

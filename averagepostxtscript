@@ -1,0 +1,6 @@
+cd positive_images
+for f in *.pgm;
+do 
+	echo "$f 1 4 9 87 25" > ${f%.pmg}.txt 
+done
+cd ..

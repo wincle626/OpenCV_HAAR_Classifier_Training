@@ -1,0 +1,3 @@
+cd positive_images
+for f in *.txt ; do opencv_createsamples -info "$f" -w 200 -h 200 -vec "${f%.txt}.vec" ; done
+cd ..

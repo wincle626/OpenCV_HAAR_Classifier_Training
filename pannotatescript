@@ -1,0 +1,3 @@
+cd positive_images
+for f in *.pgm ; do opencv_annotation --images=./"$f" --annotations=./"${f%.pgm}.txt" ; done
+cd ..

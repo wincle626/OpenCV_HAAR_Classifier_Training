@@ -1,0 +1,1 @@
+opencv_traincascade -data positive_images -vec samples.vec -bg negatives.txt -precalcValBufSize 512 -precalcIdxBufSize 512 -numPos 10 -numNeg 10 -nstages 20 -minhitrate 0.999 -maxfalsealarm 0.5 -w 200 -h 200 -nonsym -baseFormatSave

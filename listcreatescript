@@ -1,0 +1,2 @@
+find ./positive_images -iname "*.pgm" > positives.txt
+find ./negative_images -iname "*.pgm" > negatives.txt
